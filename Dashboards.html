@@ -1,0 +1,272 @@
+<div id="root">
+  <div id="nav" class="nav-container d-flex">
+    <div class="nav-content d-flex">
+      <div class="logo position-relative">
+        <a id="backtohome">
+          <div class="img"></div>
+        </a>
+      </div>
+      <div class="user-container d-flex">
+        <a href="#" class="d-flex user position-relative" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <img class="profile" alt="profile" id="image" src="img/profile/profile-1.webp">
+          <div class="name" id="username">Alicia Owens</div>
+        </a>
+        <div class="row mb-1 ms-0 me-0">
+          <div class="col-12 p-1 mb-2 pt-2">
+            <div class="text-extra-small text-white">APPLICATION</div>
+          </div>
+          <div class="col-6 ps-1 pe-1">
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" id="add" class="text-white">Add User</a>
+              </li>
+              <li>
+                <a href="#" id="list" class="text-white">
+                  <i class="bi bi-people text-white"></i>
+                  List</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <ul class="list-unstyled list-inline text-center menu-icons">
+      <li class="list-inline-item">
+        <a href="#" data-bs-toggle="modal" data-bs-target="#searchPagesModal">
+          <i data-acorn-icon="search" data-acorn-size="18"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#" id="pinButton" class="pin-button">
+          <i data-acorn-icon="lock-on" class="unpin" data-acorn-size="18"></i>
+          <i data-acorn-icon="lock-off" class="pin" data-acorn-size="18"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#" id="colorButton">
+          <i data-acorn-icon="light-on" class="light" data-acorn-size="18"></i>
+          <i data-acorn-icon="light-off" class="dark" data-acorn-size="18"></i>
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a href="#" data-bs-toggle="dropdown" data-bs-target="#notifications" aria-haspopup="true" aria-expanded="false" class="notification-button">
+          <div class="position-relative d-inline-flex">
+            <i data-acorn-icon="bell" data-acorn-size="18"></i>
+            <span class="position-absolute notification-dot rounded-xl"></span>
+          </div>
+        </a>
+        <div class="dropdown-menu dropdown-menu-end wide notification-dropdown scroll-out" id="notifications">
+          <div class="scroll">
+            <ul class="list-unstyled border-last-none">
+              <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
+                <img src="img/profile/profile-1.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="...">
+                <div class="align-self-center">
+                  <a href="#">Joisse Kaycee just sent a new comment!</a>
+                </div>
+              </li>
+              <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
+                <img src="img/profile/profile-2.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="...">
+                <div class="align-self-center">
+                  <a href="#">New order received! It is total $147,20.</a>
+                </div>
+              </li>
+              <li class="mb-3 pb-3 border-bottom border-separator-light d-flex">
+                <img src="img/profile/profile-3.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="...">
+                <div class="align-self-center">
+                  <a href="#">3 items just added to wish list by a user!</a>
+                </div>
+              </li>
+              <li class="pb-3 pb-3 border-bottom border-separator-light d-flex">
+                <img src="img/profile/profile-6.webp" class="me-3 sw-4 sh-4 rounded-xl align-self-center" alt="...">
+                <div class="align-self-center">
+                  <a href="#">Kirby Peters just sent a new message!</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="menu-container flex-grow-1">
+      <ul id="menu" class="menu">
+        <li>
+          <a href="#dashboards" data-href="Dashboards.Patient.html">
+            <i data-acorn-icon="home-garage" class="icon" data-acorn-size="18"></i>
+            <span class="label">Dashboards</span>
+          </a>
+          <ul id="dashboards">
+            <li>
+              <a href="Dashboards.Patient.html">
+                <span class="label">Patient</span>
+              </a>
+            </li>
+            <li>
+              <a href="Dashboards.Doctor.html">
+                <span class="label">Doctor</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a href="Appointments.html">
+            <i data-acorn-icon="calendar" class="icon" data-acorn-size="18"></i>
+            <span class="label">Appointments</span>
+          </a>
+        </li>
+        <li>
+          <a href="Results.html">
+            <i data-acorn-icon="form-check" class="icon" data-acorn-size="18"></i>
+            <span class="label">Results</span>
+          </a>
+        </li>
+        <li>
+          <a href="Prescriptions.html">
+            <i data-acorn-icon="inbox" class="icon" data-acorn-size="18"></i>
+            <span class="label">Prescriptions</span>
+          </a>
+        </li>
+        <li>
+          <a href="Doctors.html">
+            <i data-acorn-icon="health" class="icon" data-acorn-size="18"></i>
+            <span class="label">Doctors</span>
+          </a>
+        </li>
+        <li>
+          <a href="Consult.html">
+            <i data-acorn-icon="messages" class="icon" data-acorn-size="18"></i>
+            <span class="label">Consult</span>
+          </a>
+        </li>
+        <li>
+          <a href="Guidebook.html">
+            <i data-acorn-icon="book-open" class="icon" data-acorn-size="18"></i>
+            <span class="label">Guidebook</span>
+          </a>
+        </li>
+        <li>
+          <a href="Articles.html">
+            <i data-acorn-icon="book" class="icon" data-acorn-size="18"></i>
+            <span class="label">Articles</span>
+          </a>
+        </li>
+        <li>
+          <a href="Settings.html">
+            <i data-acorn-icon="gear" class="icon" data-acorn-size="18"></i>
+            <span class="label">Settings</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="mobile-buttons-container">
+      <a href="#" id="mobileMenuButton" class="menu-button">
+        <i data-acorn-icon="menu"></i>
+      </a>
+    </div>
+  </div>
+  <div class="nav-shadow"></div>
+</div>
+<main>
+  <div class="container">
+    <div class="page-title-container">
+      <div class="row">
+        <div class="col-12 col-md-7">
+          <span class="align-middle text-muted d-inline-block lh-1 pb-2 pt-2 text-small">Home</span>
+          <h1 class="mb-0 pb-0 display-4" id="title">Good morning, Alicia!</h1>
+        </div>
+      </div>
+    </div>
+    <div class="row" id="bodychange">
+      <div class="col-xl-4 mb-5">
+        <h2 class="small-title">About</h2>
+        <div class="card h-100-card">
+          <div class="card-body">
+            <div class="d-flex align-items-center flex-column mb-4">
+              <div class="d-flex align-items-center flex-column">
+                <div class="sw-13 position-relative mb-3">
+                  <img src="img/profile/profile-1.webp" class="img-fluid rounded-xl image" width="100" alt="thumb">
+                </div>
+                <div class="h5 mb-0 username">Alicia Owens</div>
+                <div class="text-muted email">Highschool Teacher</div>
+              </div>
+            </div>
+            <div class="mb-5">
+              <p class="text-small text-muted mb-2">CONTACT</p>
+              <div class="row g-0 mb-2">
+                <div class="col-auto">
+                  <div class="sw-3 me-1">
+                    <i data-acorn-icon="phone" class="text-primary" data-acorn-size="17"></i>
+                  </div>
+                </div>
+                <div class="col text-alternate " id="phone2">+6443884455</div>
+              </div>
+              <div class="row g-0 mb-2">
+                <div class="col-auto">
+                  <div class="sw-3 me-1">
+                    <i data-acorn-icon="email" class="text-primary" data-acorn-size="17"></i>
+                  </div>
+                </div>
+                <div class="col text-alternate  email2">aliciaowens@gmail.com</div>
+              </div>
+              <div class="row g-0 mb-2">
+                <div class="col-auto">
+                  <div class="sw-3 me-1">
+                    <i data-acorn-icon="pin" class="text-primary" data-acorn-size="17"></i>
+                  </div>
+                </div>
+                <div class="col text-alternate gender">Wellington New Zealand</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-8">
+        <h2 class="small-title">Stats</h2>
+        <div class="row gx-2">
+          <div class="col-12 p-0">
+            <div class="glide glide-small" id="statsCarousel">
+              <div class="glide__track" data-glide-el="track">
+                <div class="glide__slides">
+                  <div class="glide__slide">
+                    <div class="card mb-5 hover-border-primary">
+                      <span class="position-absolute e-3 t-4 z-index-1">
+                        <i data-acorn-icon="check" class="text-primary" data-acorn-size="14"></i>
+                      </span>
+                      <div class="h-100 d-flex flex-column justify-content-between card-body align-items-center">
+                        <div class="sw-8 sh-8 rounded-xl d-flex justify-content-center align-items-center border border-primary">
+                          <i data-acorn-icon="blood" class="text-primary"></i>
+                        </div>
+                        <div class="text-center mb-0 sh-8 d-flex align-items-center lh-1-5">
+                          Blood
+                          <br>
+                          Pressure
+                        </div>
+                        <div class="display-6 text-primary">115/74</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="glide__slide">
+                    <div class="card mb-5 hover-border-primary">
+                      <span class="position-absolute e-3 t-4 z-index-1">
+                        <i data-acorn-icon="check" class="text-primary" data-acorn-size="14"></i>
+                      </span>
+                      <div class="h-100 d-flex flex-column justify-content-between card-body align-items-center">
+                        <div class="sw-8 sh-8 rounded-xl d-flex justify-content-center align-items-center border border-primary">
+                          <i data-acorn-icon="heart" class="text-primary"></i>
+                        </div>
+                        <div class="text-center mb-0 sh-8 d-flex align-items-center lh-1-5">
+                          Heart
+                          <br>
+                          Rate
+                        </div>
+                        <div class="display-6 text-primary">93</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
